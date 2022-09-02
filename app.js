@@ -580,6 +580,18 @@ allTeamGoalFor.setAttribute("class" , "detail-heading");//----
 allTeamGoalFor.appendChild(document.createTextNode("Goal for"));
 teamDetail.appendChild(allTeamGoalFor);
 
+var allTeamGoalAgainst = document.createElement("div");
+allTeamGoalAgainst.setAttribute("id" , "all-teams-goalagainst");
+allTeamGoalAgainst.setAttribute("class" , "detail-heading");//----
+allTeamGoalAgainst.appendChild(document.createTextNode("Goal Against"));
+teamDetail.appendChild(allTeamGoalAgainst);
+
+var allTeamPts = document.createElement("div");
+allTeamPts.setAttribute("id" , "all-teams-pts");
+allTeamPts.setAttribute("class" , "detail-heading");//----
+allTeamPts.appendChild(document.createTextNode("Pts"));
+teamDetail.appendChild(allTeamPts);
+
 function details(gName) {
   getDiv.style.display = "flex";
   console.log(gName)
@@ -618,14 +630,24 @@ function details(gName) {
     allTeamDrawn.appendChild(teamDrawn_box);
 
     var teamLost_box = document.createElement("div");
-    teamLost_box.setAttribute("class","t-drawn-box")
+    teamLost_box.setAttribute("class","t-lost-box")
     teamLost_box.innerText = worldCup[key].groups[gName].standings[key3].lost;
     allTeamLost.appendChild(teamLost_box);
 
     var teamGoalFor_box = document.createElement("div");
-    teamGoalFor_box.setAttribute("class","t-drawn-box")
-    teamGoalFor_box.innerText = worldCup[key].groups[gName].standings[key3].lost;
+    teamGoalFor_box.setAttribute("class","t-goalfor-box")
+    teamGoalFor_box.innerText = worldCup[key].groups[gName].standings[key3].goals_for;
     allTeamGoalFor.appendChild(teamGoalFor_box);
+
+    var teamGoalAgainst_box = document.createElement("div");
+    teamGoalAgainst_box.setAttribute("class","t-goalagainst-box")
+    teamGoalAgainst_box.innerText = worldCup[key].groups[gName].standings[key3].goals_against;
+    allTeamGoalAgainst.appendChild(teamGoalAgainst_box);
+
+    var teamPts_box = document.createElement("div");
+    teamPts_box.setAttribute("class","t-pts-box")
+    teamPts_box.innerText = worldCup[key].groups[gName].standings[key3].pts;
+    allTeamPts.appendChild(teamPts_box);
 
     // for(var key5 in worldCup[key].groups[gName].standings[key3]) {
     //   console.log(worldCup[key].groups[gName].standings[key3][key5])

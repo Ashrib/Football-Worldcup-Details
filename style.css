@@ -64,17 +64,17 @@ body{
     width: auto;
     flex-direction: column;
 }
-.t-n-box, .t-code-box{
+.t-n-box, .t-code-box, .t-posi-box, .t-plyd-box, .t-won-box, .t-drawn-box, .t-lost-box, .t-goalfor-box, .t-goalagainst-box, .t-pts-box{
     background-color: aliceblue;
     border: 1px solid black;
+    text-align: center;
 }
 #team-details{
     display: flex;
     height: 94%;
-
-    background-color: yellow;
 }
 .detail-heading{
     background-color: red;
-    font-size: 1.2em;
+    font-size: 1.5em;
+    border: 1px solid black;
 }
