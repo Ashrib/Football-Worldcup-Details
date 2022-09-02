@@ -582,13 +582,13 @@ teamDetail.appendChild(allTeamGoalFor);
 
 var allTeamGoalAgainst = document.createElement("div");
 allTeamGoalAgainst.setAttribute("id" , "all-teams-goalagainst");
-allTeamGoalAgainst.setAttribute("class" , "detail-heading");//----
+allTeamGoalAgainst.setAttribute("class" , "detail-heading");//---
 allTeamGoalAgainst.appendChild(document.createTextNode("Goal Against"));
 teamDetail.appendChild(allTeamGoalAgainst);
 
 var allTeamPts = document.createElement("div");
 allTeamPts.setAttribute("id" , "all-teams-pts");
-allTeamPts.setAttribute("class" , "detail-heading");//----
+allTeamPts.setAttribute("class" , "detail-heading");//---
 allTeamPts.appendChild(document.createTextNode("Pts"));
 teamDetail.appendChild(allTeamPts);
 
