@@ -1,0 +1,80 @@
+body{
+    padding: 0%;
+    margin: 0%;
+}
+#main-container{
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh);
+    width: calc(100vw);
+    background-color: rgba(153, 205, 50, 0.373);
+}
+#matchList{
+    display: flex;
+    flex-wrap: wrap;
+}
+#cup-year{
+    text-align: center;
+}
+.group-box{
+    display: flex;
+    width: 18.5%;
+    height: 70px;
+    box-shadow: 0px 2px 5px gray;
+    padding: 10px;
+    margin: 2% 2%;
+    border-radius: 4px;
+    font-size: 1.5em;
+    justify-content: center;
+    align-items: center;
+}
+#mainofInfo{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh);
+    width: calc(100vw);
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.705);
+}
+#detail-box{
+    height: 500px;
+    width: 800px;
+    background-color: white;
+}
+#close-head{
+    display: flex;
+    justify-content: right;
+    height: 6%;
+    background-color: aqua;
+}
+#close-btn{
+    cursor: pointer;
+    border: none;
+    font-size: 1.1em;
+    font-weight: 700;
+    background-color: transparent;
+}
+#close-btn:hover{
+    background-color: red;
+    color: white;
+}
+#all-teams{
+    display: flex;
+    width: auto;
+    flex-direction: column;
+}
+.t-n-box, .t-code-box{
+    background-color: aliceblue;
+    border: 1px solid black;
+}
+#team-details{
+    display: flex;
+    height: 94%;
+
+    background-color: yellow;
+}
+.detail-heading{
+    background-color: red;
+    font-size: 1.2em;
+}
