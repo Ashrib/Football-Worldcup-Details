@@ -81,13 +81,10 @@ body{
 }
 .detail-column{
     border: 1px solid black;
-    /* border-right: 1px solid black; */
-    
 }
 .heading-div{
     font-size: 1.3em;
     font-weight: 700;
     text-align: center;
     margin: 6px 15px 6px 15px;
-
 }
