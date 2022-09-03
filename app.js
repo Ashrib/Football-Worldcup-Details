@@ -534,62 +534,92 @@ detailsDiv.appendChild(teamDetail);
 
 var allTeamName = document.createElement("div");
 allTeamName.setAttribute("id" , "all-teams");
-allTeamName.setAttribute("class" , "detail-heading");//----
-allTeamName.appendChild(document.createTextNode("Teams"));
+allTeamName.setAttribute("class" , "detail-column");//----
+var h3 = document.createElement("div");
+h3.setAttribute("class", "heading-div")
+h3.appendChild(document.createTextNode("Teams"));
+allTeamName.appendChild(h3);
 teamDetail.appendChild(allTeamName);
 
 var allTeamCode = document.createElement("div");
 allTeamCode.setAttribute("id" , "all-teams-code");
-allTeamCode.setAttribute("class" , "detail-heading");//----
-allTeamCode.appendChild(document.createTextNode("Code"));
+allTeamCode.setAttribute("class" , "detail-column");//----
+var h3 = document.createElement("div");
+h3.setAttribute("class", "heading-div")
+h3.appendChild(document.createTextNode("Code"));
+allTeamCode.appendChild(h3);
 teamDetail.appendChild(allTeamCode);
 
 var allTeamPosi = document.createElement("div");
 allTeamPosi.setAttribute("id" , "all-teams-position");
-allTeamPosi.setAttribute("class" , "detail-heading");//----
-allTeamPosi.appendChild(document.createTextNode("Position"));
+allTeamPosi.setAttribute("class" , "detail-column");//----
+var h3 = document.createElement("div");
+h3.setAttribute("class", "heading-div")
+h3.appendChild(document.createTextNode("Position"));
+allTeamPosi.appendChild(h3);
 teamDetail.appendChild(allTeamPosi);
 
 var allTeamPlayed = document.createElement("div");
 allTeamPlayed.setAttribute("id" , "all-teams-played");
-allTeamPlayed.setAttribute("class" , "detail-heading");//----
-allTeamPlayed.appendChild(document.createTextNode("Played"));
+allTeamPlayed.setAttribute("class" , "detail-column");//----
+var h3 = document.createElement("div");
+h3.setAttribute("class", "heading-div")
+h3.appendChild(document.createTextNode("Played"));
+allTeamPlayed.appendChild(h3);
 teamDetail.appendChild(allTeamPlayed);
 
 var allTeamWon = document.createElement("div");
 allTeamWon.setAttribute("id" , "all-teams-won");
-allTeamWon.setAttribute("class" , "detail-heading");//----
-allTeamWon.appendChild(document.createTextNode("Won"));
+allTeamWon.setAttribute("class" , "detail-column");//----
+var h3 = document.createElement("div");
+h3.setAttribute("class", "heading-div")
+h3.appendChild(document.createTextNode("Won"));
+allTeamWon.appendChild(h3);
 teamDetail.appendChild(allTeamWon);
 
 var allTeamDrawn = document.createElement("div");
 allTeamDrawn.setAttribute("id" , "all-teams-drawn");
-allTeamDrawn.setAttribute("class" , "detail-heading");//----
-allTeamDrawn.appendChild(document.createTextNode("Drawn"));
+allTeamDrawn.setAttribute("class" , "detail-column");//----
+var h3 = document.createElement("div");
+h3.setAttribute("class", "heading-div")
+h3.appendChild(document.createTextNode("Drawn"));
+allTeamDrawn.appendChild(h3);
 teamDetail.appendChild(allTeamDrawn);
 
 var allTeamLost = document.createElement("div");
 allTeamLost.setAttribute("id" , "all-teams-lost");
-allTeamLost.setAttribute("class" , "detail-heading");//----
-allTeamLost.appendChild(document.createTextNode("Lost"));
+allTeamLost.setAttribute("class" , "detail-column");//----
+var h3 = document.createElement("div");
+h3.setAttribute("class", "heading-div")
+h3.appendChild(document.createTextNode("Lost"));
+allTeamLost.appendChild(h3);
 teamDetail.appendChild(allTeamLost);
 
 var allTeamGoalFor = document.createElement("div");
 allTeamGoalFor.setAttribute("id" , "all-teams-goalfor");
-allTeamGoalFor.setAttribute("class" , "detail-heading");//----
-allTeamGoalFor.appendChild(document.createTextNode("Goal for"));
+allTeamGoalFor.setAttribute("class" , "detail-column");//----
+var h3 = document.createElement("div");
+h3.setAttribute("class", "heading-div")
+h3.appendChild(document.createTextNode("Goal for"));
+allTeamGoalFor.appendChild(h3);
 teamDetail.appendChild(allTeamGoalFor);
 
 var allTeamGoalAgainst = document.createElement("div");
 allTeamGoalAgainst.setAttribute("id" , "all-teams-goalagainst");
-allTeamGoalAgainst.setAttribute("class" , "detail-heading");//---
-allTeamGoalAgainst.appendChild(document.createTextNode("Goal Against"));
+allTeamGoalAgainst.setAttribute("class" , "detail-column");//---
+var h3 = document.createElement("div");
+h3.setAttribute("class", "heading-div")
+h3.appendChild(document.createTextNode("Goal Against"));
+allTeamGoalAgainst.appendChild(h3);
 teamDetail.appendChild(allTeamGoalAgainst);
 
 var allTeamPts = document.createElement("div");
 allTeamPts.setAttribute("id" , "all-teams-pts");
-allTeamPts.setAttribute("class" , "detail-heading");//---
-allTeamPts.appendChild(document.createTextNode("Pts"));
+allTeamPts.setAttribute("class" , "detail-column");//---
+var h3 = document.createElement("div");
+h3.setAttribute("class", "heading-div")
+h3.appendChild(document.createTextNode("Pts"));
+allTeamPts.appendChild(h3);
 teamDetail.appendChild(allTeamPts);
 
 function details(gName) {
