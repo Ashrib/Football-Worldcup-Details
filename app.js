@@ -687,4 +687,5 @@ function details(gName) {
 }
 function closeTab() {
   getDiv.style.display = "none";
+  //teamDetail.innerHTML = null;
 }
