@@ -502,7 +502,7 @@ for(var key in worldCup) {
     if(typeof (worldCup[key]) === "object") {
 
       for(var key2 in worldCup[key].groups){
-        console.log(worldCup[key].groups[key2])
+        
         var grpBox = document.createElement("div");
         grpBox.setAttribute("class","group-box");
         grpBox.setAttribute("onClick", `details(${key2})`)
@@ -626,7 +626,6 @@ function details(gName) {
 
   for(var key3 in worldCup[key].groups[key2].standings) {
 
-    console.log(worldCup[key].groups[gName].standings[key3].team)
     var teamN_box = document.createElement("div");
     teamN_box.setAttribute("class","t-n-box")
     teamN_box.innerText = worldCup[key].groups[gName].standings[key3].team.name;
